@@ -1,0 +1,16 @@
+
+
+搜索
+<a href="/song\?id=([\d]+)"><b title="(.+?)">
+
+
+替换1：字典格式
+{"url":"http://music.163.com/song/media/outer/url?id=$1", "title":"$2"},
+
+
+替换2：只有url
+http://music.163.com/song/media/outer/url?id=$1
+
+
+测试
+<a href="/song?id=1377106320"><b title="楼下等你">1234567890<a href="/song?id=1377106320"><b title="楼下等你">
